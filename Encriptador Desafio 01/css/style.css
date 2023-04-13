@@ -1,0 +1,119 @@
+body {
+    background-color: var(--azulClaro);
+    font-family: 'Roboto', sans-serif;
+}
+
+:root {
+    --azulClaro:#F3F5FC;
+    --azulDark:#0A3871;
+    --azulClear:#D8DFE8;
+    --textArea:#FFFFFF;
+    --grayColor: #495057;
+    --grayBold: #343A40;
+    --roboto:'Roboto', sans-serif;
+}
+
+.app {
+    /* border: 1px solid black; */
+    width: 85%;
+    height: 56.25rem;
+    margin: 0 auto;
+}
+
+.app__img {
+    margin: 2.5rem 0 0 2.5rem;
+} 
+
+.app__text {
+    /* display: flex;
+    flex-wrap: wrap; */
+    /* border: 1px solid black; */
+    width: 85%;
+    height: 48rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+.app__text>textarea {
+    background-color: transparent;
+    margin: 4rem 0 5rem 2.5rem;
+    border-style: none;
+    resize: none;
+    font-family: var(--roboto);
+    font-size: 20px;
+    color: var(--azulDark);
+    outline: none;
+    /*
+    con esta propiedad quito el halo cuando el  text area esta activa 
+     */
+}
+
+.app__text>textarea::placeholder {
+    color: var(--azulDark);
+    font-family: var(--roboto);
+    font-weight: 400;
+    font-size: 1.875rem;
+}
+
+.app__buttons p{
+    display: inline-block;
+    margin-left: 5px;
+}
+
+.app__buttons {
+    /* border: 1px solid black; */
+    width: 45%;
+    height: 8rem;
+    margin-left: 2.5rem;
+    color: var(--grayColor);
+    font-family: var(--roboto);
+    
+}
+
+.btn {
+    padding: 1.375rem 3.75rem;
+    border-radius: 30px;
+    font-size: large;
+    outline: none;
+}
+
+.encriptar {
+    background-color: var(--azulDark);
+    color:var(--textArea);
+    border: 0;
+}
+
+.desencriptar {
+    background-color: var(--azulClear);
+    color: var(--azulDark);
+    border: 1px solid var(--azulDark);;
+    margin-left: .9375rem;
+}
+
+.message {
+    display: grid;
+    align-content: center;
+    justify-items: center;
+
+    text-align: center;
+    background-color: var(--textArea);
+    width: 25%;
+    height: 47.5rem;
+    border-radius: 30px;
+    position: absolute;
+    top: 0;
+    left: 80%;
+}
+
+.message img {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    object-fit: contain;
+    overflow: hidden;
+    /* border: 1px solid black; */
+}
+
+.message p {
+    
+}
