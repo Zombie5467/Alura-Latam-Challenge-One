@@ -89,6 +89,16 @@ body {
     border-radius: 30px;
     font-size: large;
     outline: none;
+    cursor: pointer;
+    transition: ease-in .2s;
+}
+
+.btn:hover {
+    opacity: .9;
+}
+
+.btn:active {
+    opacity: .7;
 }
 
 .encriptar {
@@ -120,6 +130,9 @@ body {
     position: absolute;
     top: 0;
     left: 80%;
+    overflow: hidden;
+
+    box-shadow: 0px 4px 10px rgba(152, 151, 151, .3);
 }
 
 .message img {
@@ -131,3 +144,6 @@ body {
     /* border: 1px solid black; */
 }
 
+.message button {
+    margin-top: 40px;
+}
