@@ -147,6 +147,21 @@ body {
     margin-top: 40px;
 }
 
+.showMassage {
+    background-color: transparent;
+    margin: 0 auto;
+    border-style: none;
+    border: 1px solid black;
+    resize: none;
+    text-align: center;
+    font-family: var(--roboto);
+    font-size: 20px;
+    color: gray;
+    outline: none;
+    /*
+    con esta propiedad quito el halo cuando el  text area esta activa 
+     */
+}
 
 
 

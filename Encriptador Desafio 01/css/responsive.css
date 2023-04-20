@@ -1,9 +1,10 @@
 /* Responsive */
-/* 1600px */
+
 @media (max-width:1658px) {
 
     .message {
         width: 28%;
+        height: 100%;
     }
 
 }
@@ -216,11 +217,17 @@
 
     .message {
         width: 90%;
-        height: 150px;
         padding: 3%;
         margin: 20px auto;
+        
      }
-
+     
+     /* .showMassage {
+        text-align: center;
+        height: 200px;
+        font-size: small;
+        
+     } */
 
 }
 
