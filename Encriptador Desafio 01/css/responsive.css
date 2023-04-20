@@ -83,7 +83,6 @@
 
 }
 
-
 @media (max-width:1020px) {
 
     .btn {
@@ -155,9 +154,7 @@
 
     .btn__container {
         display: grid;
-        
         justify-content:center;
-       
     }   
 
     .btn {
@@ -168,8 +165,8 @@
     .message {
         width: 90%;
         height: 150px;
-        margin: 20px 20px;
-        
+        padding: 3%;
+        margin: 20px auto;
      }
 
 }
@@ -177,11 +174,16 @@
 @media (max-width:580px) {
 
     .app__buttons {
-        
         height: 500px;
         /* border:  1px solid purple; */
-        
     }
+
+    .message {
+        width: 90%;
+        height: 150px;
+        padding: 3%;
+        margin: 20px auto;
+     }
 
 }
 
@@ -192,12 +194,19 @@
         margin: 15px 0;
     } 
 
+    .message {
+        width: 90%;
+        height: 150px;
+        padding: 3%;
+        margin: 20px auto;
+     }
+
 }
 
-@media (max-width:408px) {
+@media (max-width:414px) {
 
     .btn {
-        padding: 1.375rem 4rem;
+        padding: 1.375rem 5rem;
         margin: 15px 0;
     } 
 
@@ -208,20 +217,39 @@
     .message {
         width: 90%;
         height: 150px;
-        margin: 0 auto;
-        
+        padding: 3%;
+        margin: 20px auto;
      }
+
 
 }
 
+@media (max-width:408px) {
 
-@media (max-width:324px) {
+    .btn {
+        padding: 1.375rem 5rem;
+        margin: 15px 0;
+    } 
+
+    .info__imgp{
+       display: flex;
+    }
+
+    .message {
+        width: 90%;
+        height: 150px;
+        padding: 3%;
+        margin: 20px auto;
+     }
+
+
+}
+
+@media (max-width:375px) {
 
     .app__buttons {
-        
         height: 500px;
         /* border:  1px solid purple; */
-        
     }
 
     .btn {
@@ -232,7 +260,29 @@
     .message {
         width: 90%;
         height: 150px;
-        margin: 0 auto;
+        padding: 3%;
+        margin: 20px auto;
+     }
+
+}
+
+@media (max-width:324px) {
+
+    .app__buttons {
+        height: 500px;
+        /* border:  1px solid purple; */
+    }
+
+    .btn {
+        padding: 1.375rem 4rem;
+        margin: 15px 0;
+    } 
+
+    .message {
+        width: 90%;
+        height: 150px;
+        padding: 3%;
+        margin: 20px auto;
      }
 
 }
