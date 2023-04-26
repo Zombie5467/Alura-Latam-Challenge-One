@@ -139,10 +139,9 @@ body {
 .message img {
     width: 18.75rem;
     height: 18.75rem;
-    margin: 0 auto;
+    margin-top: 150px;
     object-fit: contain;
     overflow: hidden;
-    /* border: 1px solid black; */
 }
 
 .message button {

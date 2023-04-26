@@ -15,6 +15,7 @@
 
  */
 
+//encriptar
 function encrypt () {
     var texto = document.getElementById('inputText').value.toLocaleLowerCase();
 
@@ -35,6 +36,7 @@ function encrypt () {
 
 }
 
+//desencriptar
 function decrypt () {
     var texto = document.getElementById('inputText').value.toLocaleLowerCase();
 
@@ -53,7 +55,7 @@ function decrypt () {
 
 }
 
-
+//copiar
 function copiar () {
     var content = document.querySelector('#showMassage');
     content.select();
