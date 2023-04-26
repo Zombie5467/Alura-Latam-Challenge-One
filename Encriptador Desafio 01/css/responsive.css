@@ -25,14 +25,6 @@
 
 }
 
-@media (max-width:1123px) {
-
-    .message {
-        width: 38%;
-    }
-
-}
-
 @media (max-width:1354px) {
 
     .btn__container {
@@ -41,15 +33,21 @@
 
 }
 
+@media (max-width:1123px) {
+
+    .message {
+        width: 38%;
+    }
+
+}
+
 @media (max-width:1085px) {
 
     .app__text {
         height: 1000px;
-        /* border: 1px solid red; */
     }
     
     .app__buttons {
-        /* border: 1px solid red; */
         width: 100%;
         height: 400px;
         margin: 0 auto;
@@ -58,7 +56,6 @@
     }
     
     .btn__container {
-        /* margin: 0 100px; */
         display: flex;
         justify-content: space-evenly;
     }
@@ -68,9 +65,9 @@
     }
 
     .message {
+        /* border: 1px solid red; */
        position: relative;
        left: 0;
-       /* border: 1px solid red; */
        width: 100%;
        height: 150px;
        margin-top: 70px;
@@ -82,12 +79,20 @@
         display: none;
     }
 
+    #showMassage {
+        margin-top: 15px;
+    }
+
 }
 
 @media (max-width:1020px) {
 
     .btn {
         padding: 1.375rem 8.4rem;
+    }
+
+    #showMassage {
+        margin-top: 15px;
     }
 
 }
@@ -115,8 +120,8 @@
     }
 
     .app__text>textarea {
-        background-color: transparent;
         /* border: 1px solid red; */
+        background-color: transparent;
         margin: 0 1rem;
         /*
         con esta propiedad quito el halo cuando el  text area esta activa 
@@ -132,8 +137,8 @@
     }
 
     .app__text>textarea {
-        background-color: transparent;
         /* border: 1px solid red; */
+        background-color: transparent;
         margin: 5px 8px;
         width: 95%;
         /*
@@ -165,7 +170,6 @@
 
     .message {
         width: 90%;
-        height: 150px;
         padding: 3%;
         margin: 20px auto;
      }
@@ -176,12 +180,11 @@
 
     .app__buttons {
         height: 500px;
-        /* border:  1px solid purple; */
+ 
     }
 
     .message {
         width: 90%;
-        height: 150px;
         padding: 3%;
         margin: 20px auto;
      }
@@ -191,13 +194,12 @@
 @media (max-width:557px) {
 
     .btn {
-        padding: 1.375rem 8rem;
+        padding: 1.375rem 6rem;
         margin: 15px 0;
     } 
 
     .message {
         width: 90%;
-        height: 150px;
         padding: 3%;
         margin: 20px auto;
      }
@@ -219,16 +221,8 @@
         width: 90%;
         padding: 3%;
         margin: 20px auto;
-        
      }
      
-     /* .showMassage {
-        text-align: center;
-        height: 200px;
-        font-size: small;
-        
-     } */
-
 }
 
 @media (max-width:408px) {
@@ -244,21 +238,12 @@
 
     .message {
         width: 90%;
-        height: 150px;
         padding: 3%;
         margin: 20px auto;
      }
-
-
 }
 
 @media (max-width:375px) {
-
-    .app__buttons {
-        height: 500px;
-        /* border:  1px solid purple; */
-    }
-
     .btn {
         padding: 1.375rem 4rem;
         margin: 15px 0;
@@ -266,7 +251,6 @@
 
     .message {
         width: 90%;
-        height: 150px;
         padding: 3%;
         margin: 20px auto;
      }
@@ -277,7 +261,6 @@
 
     .app__buttons {
         height: 500px;
-        /* border:  1px solid purple; */
     }
 
     .btn {
@@ -286,10 +269,12 @@
     } 
 
     .message {
-        width: 90%;
-        height: 150px;
+        width: 100%;    
         padding: 3%;
         margin: 20px auto;
      }
 
+     .info__imgp {
+        display: flex;
+     }
 }

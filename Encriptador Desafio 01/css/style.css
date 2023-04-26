@@ -2,6 +2,7 @@
 body {
     background-color: var(--azulClaro);
     font-family: 'Roboto', sans-serif;
+    margin-bottom: 50px;
 }
 
 :root {
@@ -51,6 +52,7 @@ body {
     font-size: 20px;
     color: var(--azulDark);
     outline: none;
+    /* border: 2px solid black; */
     /*
     con esta propiedad quito el halo cuando el  text area esta activa 
      */
@@ -145,24 +147,26 @@ body {
 
 .message button {
     margin-top: 40px;
+    margin-bottom: 20px;
+    display: none;
 }
 
-.showMassage {
+#showMassage {
+    width: 80%;
     background-color: transparent;
-    margin: 0 auto;
+    margin: 10px auto;
     border-style: none;
-    border: 1px solid black;
     resize: none;
-    text-align: center;
     font-family: var(--roboto);
     font-size: 20px;
-    color: gray;
+    text-align: center;
+    color: var(--grayColor);
     outline: none;
+    /* border: 2px solid black; */
     /*
     con esta propiedad quito el halo cuando el  text area esta activa 
      */
 }
-
 
 
 

@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="css/style.css"> <!-- General / Desktop -->
     <link rel="stylesheet" href="css/responsive.css"> <!-- Responsive -->
 
+    <!-- javascript -->
+    <script src="app.js"></script>
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -33,7 +36,7 @@
             <div class="app__text">
                 
                 <textarea 
-                    title="textApp" name="" id="" cols="50px" rows="20px" placeholder="Ingrese su texto aqui">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit labore molestiae eos doloremque architecto necessitatibus recusandae dignissimos beatae maiores, incidunt illum in! Quasi consequuntur unde doloribus ex, magnam tempore reprehenderit adipisci inventore, neque a enim. Dolorem ducimus non aperiam cupiditate architecto culpa molestias dolores explicabo neque voluptatem. Ex, inventore maiores.
+                    title="textApp" name="" id="inputText" cols="50px" rows="20px" placeholder="Ingrese su texto aqui">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit labore molestiae eos doloremque architecto necessitatibus recusandae dignissimos beatae maiores, incidunt illum in! Quasi consequuntur unde doloribus ex, magnam tempore reprehenderit adipisci inventore, neque a enim. Dolorem ducimus non aperiam cupiditate architecto culpa molestias dolores explicabo neque voluptatem. Ex, inventore maiores.
                 </textarea>
 
                 <!-- Contenedor para botones y Mensaje encriptado -->
@@ -49,41 +52,26 @@
                     <!-- Botones -->
                     <div class="btn__container">
 
-                        <button class="btn encriptar">Encriptar</button>
-                        <button class="btn desencriptar">Desencriptar</button>
+                        <button class="btn encriptar" onclick="encrypt()">Encriptar</button>
+                        <button class="btn desencriptar" onclick="decrypt()">Desencriptar</button>
 
                     </div>
 
                     <!-- Mensaje encriptado -->
-                    <div class="message">
+                    <div class="message" id="messageId">
 
-                        <img src="assets/muñeco.svg" alt="">
+                        <img id="messageImg" src="assets/muñeco.svg" alt="">
 
-                        <h2>Ningun mensaje fue encontrado</h2>
+                        <h2 id="messageTitle">Ningun mensaje fue encontrado</h2>
 
-                        <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+                        <!-- <p>Ingresa el texto que deseas encriptar o desencriptar</p> -->
 
-                        <!-- <textarea
+                        <textarea id="showMassage" title="textApp" name="" cols="50px" rows="15px" placeholder="Ingrese su texto aqui"></textarea>
 
-                            id = "showMassage" title="textApp2" name="" id="" cols="30px" rows="12px" placeholder="Ingrese su texto aqui" class="showMassage">
-                            
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit labore molestiae eos doloremque architecto necessitatibus recusandae dignissimos beatae maiores, incidunt illum in! Quasi consequuntur unde doloribus ex, magnam tempore reprehenderit adipisci inventore, neque a enim. Dolorem ducimus non aperiam cupiditate architecto culpa molestias dolores explicabo neque voluptatem. Ex, inventore maiores.
-
-                        </textarea> -->
-
-                        <!-- 
-                            <button class="btn desencriptar">Copiar</button> -->
-
-                            <!-- voy a usar p con una clase y no textarea para mostrar el texto encripadto, porque no pude hacerlo responsive, la idea es una de dos:
-                            
-                            usar innerText 
-                            revisar el video tutorial
                         
-                            NOTA DE ULTIMA HORA, con p no sale
-                            el scroll
-                        -->
-
-                    </div>
+                        <button id="copiar" class="btn desencriptar" onclick="copiar()">Copiar</button> 
+                    
+                    </div><br><br>
 
                 </div>
             </div>
