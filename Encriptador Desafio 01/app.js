@@ -52,6 +52,7 @@ function decrypt () {
     document.getElementById('showMassage').innerText = textCifrado;
     document.getElementById('copiar').style.display = 'show';
     document.getElementById('copiar').style.display = 'inherit';
+    document.getElementById("messageId").style.height = "100%";
 
 }
 
